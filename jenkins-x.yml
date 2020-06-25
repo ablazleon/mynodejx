@@ -3,6 +3,6 @@ pipelineConfig:
  pipelines:
   release:
    build:
-    preSteps:
+    steps:
     - sh: npm run lint
       name: jslint
