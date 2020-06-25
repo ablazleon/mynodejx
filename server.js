@@ -1,7 +1,7 @@
 
 var http = require('http');
 var fileSystem = require('fs');
-
+- bad thing
 var server = http.createServer(function(req, resp){
 	var fileName = './index.html';
 	var contentType = 'text/html';
