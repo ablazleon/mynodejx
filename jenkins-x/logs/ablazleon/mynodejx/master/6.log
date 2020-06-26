@@ -1,0 +1,124 @@
+
+Showing logs for build [32mablazleon-mynodejx-master-relea-f74qj-6[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-blvgv[0m
+{"level":"info","ts":1593130200.285745,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1593130200.2863553,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mablazleon-mynodejx-master-relea-f74qj-6[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-7mlvj[0m
+{"level":"info","ts":1593130201.590649,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1593130201.5918305,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mablazleon-mynodejx-master-relea-f74qj-6[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mablazleon-mynodejx-master-relea-f74qj-6[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-ablazleon-mynodejx-master-relea-f74qj-tqqwq[0m
+{"level":"info","ts":1593130208.667499,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1593130209.7910662,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/mynode**.git @ v0.0.6 in path /workspace/source"}
+
+Showing logs for build [32mablazleon-mynodejx-master-relea-f74qj-6[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mablazleon-mynodejx-master-relea-f74qj-6[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:636198c804471656f1d88d2c60616ce6a28d3218
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mablazleon-mynodejx-master-relea-f74qj-6[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mablazleon-mynodejx-master-relea-f74qj-6[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+WARNING: failed to find Secret npm-token in namespace **
+
+Showing logs for build [32mablazleon-mynodejx-master-relea-f74qj-6[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN REPLACE_ME@1.0.0 No repository field.
+npm WARN REPLACE_ME@1.0.0 No license field.
+
+up to date in 0.908s
+found 0 vulnerabilities
+
+
+Showing logs for build [32mablazleon-mynodejx-master-relea-f74qj-6[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
+
+> REPLACE_ME@1.0.0 test /workspace/source
+> echo "no test specified" && exit 0
+
+no test specified
+
+Showing logs for build [32mablazleon-mynodejx-master-relea-f74qj-6[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+E0626 00:10:14.975473      10 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
+	For verbose messaging see aws.Config.CredentialsChainVerboseErrors
+[36mINFO[0m[0000] Using dockerignore file: /workspace/source/.dockerignore 
+[36mINFO[0m[0000] Retrieving image manifest node:9-slim        
+E0626 00:10:15.397083      10 metadata.go:154] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+E0626 00:10:15.399540      10 metadata.go:166] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+[36mINFO[0m[0002] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0004] Built cross stage deps: map[]                
+[36mINFO[0m[0004] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0004] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0005] Executing 0 build triggers                   
+[36mINFO[0m[0005] cmd: EXPOSE                                  
+[36mINFO[0m[0005] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0005] Checking for cached layer gcr.io/envjenkinsk8udacitycapstone/cache:cec6c55b5e23f0b2c43a968dae5066be358b6673f979ba0aadce3f08c8063fbd... 
+[36mINFO[0m[0006] No cached layer found for cmd COPY . .       
+[36mINFO[0m[0006] Unpacking rootfs as cmd COPY . . requires it. 
+[36mINFO[0m[0010] ENV PORT 8080                                
+[36mINFO[0m[0010] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0010] EXPOSE 8080                                  
+[36mINFO[0m[0010] cmd: EXPOSE                                  
+[36mINFO[0m[0010] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0010] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0010] WORKDIR /usr/src/app                         
+[36mINFO[0m[0010] cmd: workdir                                 
+[36mINFO[0m[0010] Changed working directory to /usr/src/app    
+[36mINFO[0m[0010] Creating directory /usr/src/app              
+[36mINFO[0m[0010] Resolving 1 paths                            
+[36mINFO[0m[0010] Taking snapshot of files...                  
+[36mINFO[0m[0010] COPY . .                                     
+[36mINFO[0m[0010] Resolving 128 paths                          
+[36mINFO[0m[0010] Taking snapshot of files...                  
+[36mINFO[0m[0010] Pushing layer gcr.io/envjenkinsk8udacitycapstone/cache:cec6c55b5e23f0b2c43a968dae5066be358b6673f979ba0aadce3f08c8063fbd to cache now 
+[36mINFO[0m[0010] CMD ["npm", "start"]                         
+[36mINFO[0m[0010] No files changed in this command, skipping snapshotting. 
+
+Showing logs for build [32mablazleon-mynodejx-master-relea-f74qj-6[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mablazleon-mynodejx-master-relea-f74qj-6[0m stage [32mfrom-build-pack[0m and container [32mstep-build-jslint[0m
+=== npm audit security report ===                        
+                                                                                
+found 0 vulnerabilities
+ in 0 scanned packages
+
+Showing logs for build [32mablazleon-mynodejx-master-relea-f74qj-6[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source/charts/mynode** to an unshallow repository
+Generating change log from git ref 41d23db4866fbe1cd144628d9aa3e05a13fc3416 => abf0992acf6293f7a70b9c06194e48256d56c0ed
+Associating user ********* in users.jenkins.io with email adrian.blazquez.leon@alumnos.upm.es to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user ********* in users.jenkins.io
+WARNING: Failed to enrich commit 591e409615802a4c864179a2814e0f8ddd36ea43 with issues: User.jenkins.io "*********" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+WARNING: Failed to enrich commit 591e409615802a4c864179a2814e0f8ddd36ea43 with issues: users.jenkins.io "x-0" already exists
+Finding issues in commit messages using git format
+WARNING: No release found for *********/mynode** and tag v0.0.6 so creating a new release
+Updated the release information at https://github.com/*********/mynode**/releases/tag/v0.0.6
+generated: /workspace/source/charts/mynode**/templates/release.yaml
+Created Release mynode**-0-0-6 resource in namespace **
+Updating PipelineActivity *********-mynode**-master-6 with version 0.0.6
+Updated PipelineActivities *********-mynode**-master-6 with release notes URL: https://github.com/*********/mynode**/releases/tag/v0.0.6
+
+Showing logs for build [32mablazleon-mynodejx-master-relea-f74qj-6[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file mynode**-0.0.6.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Received 201 response: {"saved":true}
+
+Showing logs for build [32mablazleon-mynodejx-master-relea-f74qj-6[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Promoting app mynode** version 0.0.6 to namespace **-staging
+Created Pull Request: https://github.com/*********/environment-**gke4-staging/pull/3
+Added label updatebot to Pull Request https://github.com/*********/environment-**gke4-staging/pull/3
+got git provider status pending from PR https://github.com/*********/environment-**gke4-staging/pull/3
+got git provider status pending from PR https://github.com/*********/environment-**gke4-staging/pull/3
+got git provider status pending from PR https://github.com/*********/environment-**gke4-staging/pull/3
+Pull Request https://github.com/*********/environment-**gke4-staging/pull/3 is merged at sha 3c370dcf87b284ac8261c593b1ddf683fc6c8f58
+Pull Request merged but we are not waiting for the update pipeline to complete!
