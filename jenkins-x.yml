@@ -4,5 +4,5 @@ pipelineConfig:
   release:
    build:
     steps:
-    - sh: npm run lint
+    - sh: npm audit
       name: jslint
